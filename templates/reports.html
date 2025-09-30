@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="header">
+        <div class="customer">
+            <span class="customer-name">Báo cáo</span>
+        </div>
+        <div class="actions">
+            <button>Tạo báo cáo mới</button>
+            <button>Xuất PDF/Excel</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <h3>Tổng kết</h3>
+            <table class="info-table">
+                <tr><td class="label">Quý/Năm:</td><td>Q3/2025</td></tr>
+                <tr><td class="label">Doanh thu:</td><td>150,000,000đ</td></tr>
+                <tr><td class="label">Chi phí:</td><td>100,000,000đ</td></tr>
+                <tr><td class="label">Lãi:</td><td>50,000,000đ</td></tr>
+            </table>
+        </div>
+        <div class="purchase">
+            <h3>Khách/Sản phẩm</h3>
+            <table class="purchase-table">
+                <tr><td class="label">Khách mới:</td><td>20</td></tr>
+                <tr><td class="label">Khách quay lại:</td><td>8</td></tr>
+                <tr><td class="label">Doanh số SP:</td><td>80,000,000đ</td></tr>
+            </table>
+        </div>
+        <div class="history">
+            <h3>Báo cáo đầy đủ</h3>
+            <div style="height:220px; background:#f5f6f5; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#aaa;">[Preview báo cáo PDF/Excel]</div>
+        </div>
+    </div>
+{% endblock %}

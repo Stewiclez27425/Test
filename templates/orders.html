@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="header">
+        <div class="customer">
+            <span class="customer-name">Đơn hàng</span>
+            <span class="status">2 đơn chờ</span>
+        </div>
+        <div class="actions">
+            <button>Tạo đơn mới</button>
+            <button>Cập nhật trạng thái</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <h3>Thông tin đơn hàng <button class="edit-btn">Sửa</button></h3>
+            <table class="info-table">
+                <tr><td class="label">Mã đơn:</td><td>DH001</td></tr>
+                <tr><td class="label">Khách:</td><td>Thái Bùi</td></tr>
+                <tr><td class="label">Tổng giá:</td><td>2,000,000đ</td></tr>
+            </table>
+        </div>
+        <div class="purchase">
+            <h3>Sản phẩm trong đơn</h3>
+            <table class="purchase-table">
+                <tr><td class="label">SP:</td><td>Sản phẩm A</td></tr>
+                <tr><td class="label">Số lượng:</td><td>2</td></tr>
+                <tr><td class="label">Giá:</td><td>1,000,000đ</td></tr>
+            </table>
+        </div>
+        <div class="history">
+            <h3>Lịch sử đơn hàng</h3>
+            <table class="history-table">
+                <tr>
+                    <th>Trạng thái</th>
+                    <th>Ngày</th>
+                    <th>Thanh toán</th>
+                </tr>
+                <tr>
+                    <td>Chờ xử lý</td>
+                    <td>28/09/2025</td>
+                    <td>Chưa TT</td>
+                </tr>
+                <tr>
+                    <td>Hoàn thành</td>
+                    <td>29/09/2025</td>
+                    <td>Đã TT</td>
+                </tr>
+            </table>
+            <div style="margin-top:12px; color:#888; font-size:14px;">Hiển thị 2/2 kết quả</div>
+        </div>
+    </div>
+{% endblock %}

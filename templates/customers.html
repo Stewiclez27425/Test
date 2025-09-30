@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="header">
+        <div class="customer">
+            <span class="customer-name">Thái Bùi</span>
+            <span class="status">Đang giao dịch</span>
+        </div>
+        <div class="actions">
+            <button>Cập nhật</button>
+            <button>Thêm ghi chú</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <h3>Thông tin cá nhân <button class="edit-btn">Sửa</button></h3>
+            <table class="info-table">
+                <tr><td class="label">Ngày sinh:</td><td>01/01/1990</td></tr>
+                <tr><td class="label">Số điện thoại:</td><td>0901234567</td></tr>
+                <tr><td class="label">Email:</td><td>thai.bui@email.com</td></tr>
+                <tr><td class="label">Nhóm KH:</td><td>VIP</td></tr>
+                <tr><td class="label">Mã KH:</td><td>KH001</td></tr>
+                <tr><td class="label">Website:</td><td>www.thaibui.com</td></tr>
+                <tr><td class="label">Nhân viên phụ trách:</td><td>Nguyễn Văn A</td></tr>
+            </table>
+        </div>
+        <div class="purchase">
+            <h3>Thông tin mua hàng</h3>
+            <table class="purchase-table">
+                <tr><td class="label">Tổng tiền mua:</td><td>1,500,000đ</td></tr>
+                <tr><td class="label">Tổng tiền còn nợ:</td><td>0đ</td></tr>
+                <tr><td class="label">Ngày cuối mua:</td><td>28/09/2025</td></tr>
+                <tr><td class="label">Cổng nhận tiền:</td><td>Ngân hàng</td></tr>
+            </table>
+        </div>
+        <div class="history">
+            <h3>Lịch sử mua hàng</h3>
+            <table class="history-table">
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Trạng thái</th>
+                    <th>Thanh toán</th>
+                    <th>Xuất kho</th>
+                    <th>Giá trị</th>
+                    <th>Chính hãng</th>
+                    <th>Người đơn</th>
+                    <th>Nhân viên lý do</th>
+                    <th>Ngày ghi nhận</th>
+                </tr>
+                <tr>
+                    <td>SON03144</td>
+                    <td>Hoàn thành</td>
+                    <td>Đã TT</td>
+                    <td>Đã xuất</td>
+                    <td>1,500,000đ</td>
+                    <td>Có</td>
+                    <td>Thái Bùi</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>28/09/2025</td>
+                </tr>
+                <tr>
+                    <td>SON03145</td>
+                    <td>Chờ xử lý</td>
+                    <td>Chưa TT</td>
+                    <td>Chưa xuất</td>
+                    <td>2,000,000đ</td>
+                    <td>Không</td>
+                    <td>Thái Bùi</td>
+                    <td>Nguyễn Văn B</td>
+                    <td>29/09/2025</td>
+                </tr>
+            </table>
+            <div style="margin-top:12px; color:#888; font-size:14px;">Hiển thị 2/2 kết quả</div>
+        </div>
+    </div>
+{% endblock %}

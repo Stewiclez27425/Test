@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="header">
+        <div class="customer">
+            <span class="customer-name">Thống kê</span>
+        </div>
+        <div class="actions">
+            <button>Cập nhật dữ liệu</button>
+            <button>Xuất báo cáo</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <h3>Tổng quan</h3>
+            <table class="info-table">
+                <tr><td class="label">Tổng hàng tồn:</td><td>120</td></tr>
+                <tr><td class="label">Doanh thu tháng:</td><td>50,000,000đ</td></tr>
+                <tr><td class="label">Lãi:</td><td>10,000,000đ</td></tr>
+            </table>
+        </div>
+        <div class="purchase">
+            <h3>Top sản phẩm</h3>
+            <table class="purchase-table">
+                <tr><td class="label">Sản phẩm bán chạy:</td><td>Sản phẩm A</td></tr>
+                <tr><td class="label">Hết hạn sắp tới:</td><td>Sản phẩm B</td></tr>
+            </table>
+        </div>
+        <div class="history">
+            <h3>Biểu đồ doanh thu</h3>
+            <div style="height:220px; background:#f5f6f5; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#aaa;">[Biểu đồ doanh thu theo tháng]</div>
+        </div>
+    </div>
+{% endblock %}

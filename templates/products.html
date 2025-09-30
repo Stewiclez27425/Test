@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="header">
+        <div class="customer">
+            <span class="customer-name">Sản phẩm</span>
+            <span class="status">Tồn kho thấp</span>
+        </div>
+        <div class="actions">
+            <button>Thêm sản phẩm</button>
+            <button>Nhập kho</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="info">
+            <h3>Thông tin sản phẩm <button class="edit-btn">Sửa</button></h3>
+            <table class="info-table">
+                <tr><td class="label">Tên SP:</td><td>Sản phẩm A</td></tr>
+                <tr><td class="label">Giá:</td><td>500,000đ</td></tr>
+                <tr><td class="label">Ngày SX:</td><td>01/01/2025</td></tr>
+                <tr><td class="label">HSD:</td><td>01/01/2026</td></tr>
+                <tr><td class="label">Số lượng tồn:</td><td>8</td></tr>
+            </table>
+        </div>
+        <div class="purchase">
+            <h3>Nhà cung cấp</h3>
+            <table class="purchase-table">
+                <tr><td class="label">Tên NCC:</td><td>Công ty B</td></tr>
+                <tr><td class="label">Liên hệ:</td><td>0123456789</td></tr>
+                <tr><td class="label">Giá nhập:</td><td>400,000đ</td></tr>
+            </table>
+        </div>
+        <div class="history">
+            <h3>Lịch sử nhập/xuất</h3>
+            <table class="history-table">
+                <tr>
+                    <th>Mã SP</th>
+                    <th>Số lượng</th>
+                    <th>Ngày</th>
+                    <th>Loại</th>
+                </tr>
+                <tr>
+                    <td>SP001</td>
+                    <td>10</td>
+                    <td>01/09/2025</td>
+                    <td>Nhập</td>
+                </tr>
+                <tr>
+                    <td>SP001</td>
+                    <td>2</td>
+                    <td>10/09/2025</td>
+                    <td>Xuất</td>
+                </tr>
+            </table>
+            <div style="margin-top:12px; color:#888; font-size:14px;">Hiển thị 2/2 kết quả</div>
+        </div>
+    </div>
+{% endblock %}

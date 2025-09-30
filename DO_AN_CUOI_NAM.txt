@@ -1,0 +1,78 @@
+===============================
+QUẢN LÝ KHÁCH HÀNG VÀ SẢN PHẨM
+===============================
+
+I.Khách hàng
+	1.Tìm kiếm thông tin khách hàng (Tên, SĐT, email, giới tính, địa chỉ)
+	2.Lọc và xuất thông tin khách hàng
+	3.Thêm/Xóa khách hàng
+	4.
+	5.
+
+II.Sản phẩm
+	1.Tìm kiếm thông tin sản phẩm (Tên, giá, Ngày sản xuất, Hạn sử dụng)
+	2.Lọc và xuất thông tin sản phẩm
+	3.Thêm/xóa sản phẩm
+	4.
+	5.
+
+III.Thống kê
+	1.Hàng tồn
+	2.Hết hạn
+	3.Thu-Chi (Lãi/Lỗ)
+	4.Sản phẩm được bán nhiều nhất
+	5.
+	6.
+
+IV.Báo cáo
+	1.Tổng kết quý
+	2.Tổng kết cuối năm
+	3.Số lượng khách hàng
+	4.Mức độ hài lòng của khách hàng
+	5.
+
+
+
+
+============
+IMPORT/EXPORT DATA
+============
+I.Nhập
+	Nhập data từ excel (Dùng thư viện pandas và openpyxl)
+	Dùng load_workbook và set row 0 =key, row 1 = value ==> dictionary
+II.Xuất
+	Dùng flask
+
+
+
+
+
+============
+Xử lý data
+============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

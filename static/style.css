@@ -1,0 +1,58 @@
+/* style.css - style chung cho toàn bộ app */
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f5f6f5; }
+.sidebar {
+    position: fixed; left: 0; top: 0; bottom: 0; width: 220px; background: #23272e; color: #fff; padding-top: 30px; }
+.sidebar h2 { text-align: center; margin-bottom: 30px; font-size: 22px; color: #3498db; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { margin: 0; }
+.sidebar ul li a {
+    display: flex; align-items: center; padding: 14px 30px; color: #bfc9d1; text-decoration: none; transition: background 0.2s, color 0.2s; font-size: 16px;
+}
+.sidebar ul li a svg {
+    width: 20px; height: 20px; margin-right: 14px; flex-shrink: 0;
+    fill: #bfc9d1; transition: fill 0.2s;
+}
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background: #3498db; color: #fff; border-radius: 8px 0 0 8px;
+}
+.sidebar ul li a.active svg, .sidebar ul li a:hover svg {
+    fill: #fff;
+}
+.main {
+    margin-left: 220px; padding: 0 40px 40px 40px;
+}
+.header {
+    display: flex; justify-content: space-between; align-items: center; background: #fff; padding: 24px 0 16px 0; border-bottom: 1px solid #e0e0e0; margin-bottom: 30px;
+}
+.header .customer {
+    display: flex; align-items: center;
+}
+.header .customer-name { font-size: 22px; font-weight: 600; margin-right: 18px; }
+.header .status {
+    background: #ffe082; color: #b26a00; padding: 4px 14px; border-radius: 12px; font-size: 14px; font-weight: 500;
+}
+.header .actions button {
+    margin-left: 10px; padding: 8px 18px; border: none; border-radius: 5px; background: #3498db; color: #fff; font-size: 15px; cursor: pointer; transition: background 0.2s;
+}
+.header .actions button:hover { background: #217dbb; }
+.content {
+    display: flex; gap: 30px; flex-wrap: wrap;
+}
+.info, .purchase, .history {
+    background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 24px; margin-bottom: 30px;
+}
+.info, .purchase { flex: 1 1 320px; min-width: 320px; }
+.history { flex: 2 1 600px; min-width: 600px; }
+.info h3, .purchase h3, .history h3 { margin-top: 0; color: #3498db; }
+.info-table, .purchase-table { width: 100%; border-collapse: collapse; }
+.info-table td, .purchase-table td { padding: 6px 0; }
+.info-table td.label { color: #888; width: 140px; }
+.history-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.history-table th, .history-table td { border-bottom: 1px solid #e0e0e0; padding: 8px 6px; text-align: left; }
+.history-table th { background: #f5f6f5; color: #3498db; }
+.edit-btn { float: right; background: #e0e0e0; color: #3498db; border: none; border-radius: 4px; padding: 4px 10px; cursor: pointer; font-size: 13px; }
+.edit-btn:hover { background: #3498db; color: #fff; }
+@media (max-width: 1100px) {
+    .content { flex-direction: column; }
+    .history { min-width: unset; }
+}
